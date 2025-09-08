@@ -16,16 +16,8 @@ These notes describe the systems currently implemented in the project. They aim 
 - Spawning: [`spawning/`](spawning/README.md)
 - Leaderboards: [`leaderboards/`](leaderboards/README.md)
 - Automation & Resets: [`automation/`](automation/README.md)
-- Logging: [`logging.md`](logging.md)
-- Dev Checklist: [`dev-checklist.md`](dev-checklist.md)
 
-## Quick Start
-1. Open the place in Studio and start a server with 1 client.
-2. Confirm server output shows *DataEditor Initialized* and *Quests Binders initialized*.
-3. Talk to the ShopKeeper and run through **HELLO_NEIGHBOR_ADV**.
-4. Pick up a coin to exercise `CollectableHandler` and quest bumps.
-
-## Known Limitations (honest list)
+## Known Limitations
 - Quest cooldown gating may need additional checks in `Engine.CanAccept` for strict non-repeatable flows.
 - `TouchDetection` exists but many pickups are handled directly by `CollectableHandler` touch.
 - GUI prompt styling is simple; colors and spacing are configurable in `TemplatesExtra` and client.
